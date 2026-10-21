@@ -38,6 +38,7 @@ header.top{padding:1rem 0}header.top .w{display:flex;justify-content:space-betwe
 .about{display:grid;gap:1.4rem;align-items:center}.about img{border-radius:28px;width:min(320px,100%);aspect-ratio:3/4;object-fit:cover;object-position:50% 25%}
 @media(min-width:760px){.prod{grid-template-columns:300px 1fr;align-items:center;padding:2.2rem}#cat{grid-template-columns:1fr 1fr}.about{grid-template-columns:320px 1fr}}
 </style></head><body>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1455464630051032&ev=PageView&noscript=1"></noscript>
 <a class="skip" href="#cat">Ir para o catálogo</a>
 <header class="top"><div class="w"><a class="brand" href="index.html">Leticia Moraes</a><a class="ig" href="https://www.instagram.com/leticia.moraes.nutri/" target="_blank" rel="noopener">Instagram</a></div></header>
 <main>
@@ -75,6 +76,8 @@ COMING_SOON.forEach(p=>{const a=document.createElement('article');a.className='s
  a.innerHTML='<span class="tag">Em breve</span><h3 style="margin:.8rem 0 .3rem"></h3><p></p>';
  a.querySelector('h3').textContent=p.title;a.querySelector('p').textContent=p.note;cat.appendChild(a)});
 document.getElementById('y').textContent=new Date().getFullYear();
+/* repassa UTMs ao abrir a página de vendas */
+(function(){var q=location.search;if(!q||q.length<2)return;document.querySelectorAll('a[href="marmitas.html"]').forEach(function(a){a.href='marmitas.html'+q})})();
 </script><script>
 /* ===== META PIXEL: cole o ID do seu Pixel (só números) entre as aspas. Vazio = desligado. ===== */
 const META_PIXEL_ID = '1455464630051032';
