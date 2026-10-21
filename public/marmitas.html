@@ -139,4 +139,16 @@ const PROMO_END = null;
   const t=setInterval(tick,1000);tick();
 })();
 document.getElementById('y').textContent=new Date().getFullYear();
-</script></body></html>
+</script><script>
+/* ===== META PIXEL: cole o ID do seu Pixel (só números) entre as aspas. Vazio = desligado. ===== */
+const META_PIXEL_ID = '1455464630051032';
+(function(){
+  if(!META_PIXEL_ID) return;
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init',META_PIXEL_ID);
+  fbq('track','PageView');
+  fbq('track','ViewContent',{content_name:'Receitas Fitness para Marmitas',content_type:'product',value:9.99,currency:'BRL'});
+  document.querySelectorAll('a[href*="zuptos"]').forEach(function(a){a.addEventListener('click',function(){fbq('track','InitiateCheckout',{content_name:'Receitas Fitness para Marmitas',value:9.99,currency:'BRL'})})});
+})();
+</script>
+</body></html>

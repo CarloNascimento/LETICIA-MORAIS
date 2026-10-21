@@ -75,4 +75,15 @@ COMING_SOON.forEach(p=>{const a=document.createElement('article');a.className='s
  a.innerHTML='<span class="tag">Em breve</span><h3 style="margin:.8rem 0 .3rem"></h3><p></p>';
  a.querySelector('h3').textContent=p.title;a.querySelector('p').textContent=p.note;cat.appendChild(a)});
 document.getElementById('y').textContent=new Date().getFullYear();
-</script></body></html>
+</script><script>
+/* ===== META PIXEL: cole o ID do seu Pixel (só números) entre as aspas. Vazio = desligado. ===== */
+const META_PIXEL_ID = '1455464630051032';
+(function(){
+  if(!META_PIXEL_ID) return;
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init',META_PIXEL_ID);
+  fbq('track','PageView');
+  
+})();
+</script>
+</body></html>
